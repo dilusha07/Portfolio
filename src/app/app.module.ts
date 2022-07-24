@@ -8,6 +8,7 @@ import { HeaderComponent } from './profile/header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './profile/about/about.component';
 import { SplitPipe } from './profile/split.pipe';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SplitPipe } from './profile/split.pipe';
     HeaderComponent,
     IntroComponent,
     AboutComponent,
-    SplitPipe
+    SplitPipe,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
