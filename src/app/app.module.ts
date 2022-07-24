@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './profile/header/header.component';
 import { IntroComponent } from './intro/intro.component';
+import { AboutComponent } from './profile/about/about.component';
+import { SplitPipe } from './profile/split.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     HeaderComponent,
-    IntroComponent
+    IntroComponent,
+    AboutComponent,
+    SplitPipe
   ],
   imports: [
     BrowserModule,
