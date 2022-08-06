@@ -9,6 +9,8 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './profile/about/about.component';
 import { SplitPipe } from './profile/split.pipe';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,11 @@ import { ExperienceComponent } from './experience/experience.component';
     IntroComponent,
     AboutComponent,
     SplitPipe,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

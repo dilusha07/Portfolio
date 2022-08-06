@@ -25,7 +25,50 @@ export class ProfileService {
     },
   ];
 
+  projects: any = [
+    {
+      id: 1,
+      title: 'Online Food Ordering System',
+      desc: '',
+      livedemo: '',
+      giturl: '',
+      imgUrl: 'assets/images/project1.png',
+      technologies: 'React, Node.js, MongoDB',
+    },
+    {
+      id: 2,
+      title: 'Library Management System',
+      desc: '',
+      livedemo: '',
+      giturl: '',
+      imgUrl: 'assets/images/project2.jpg',
+      technologies: 'React, Node.js, MongoDB',
+    },
+    {
+      id: 3,
+      title: 'Sri Lanka Tourism',
+      desc: '',
+      livedemo: '',
+      giturl: '',
+      imgUrl: 'assets/images/project3.jpg',
+      technologies: 'HTML, CSS, JavaScript',
+    },
+    {
+      id: 4,
+      title: 'University management System',
+      desc: '',
+      livedemo: '',
+      giturl: '',
+      imgUrl: 'assets/images/project4.jpg',
+      technologies: 'Java, MYSQL',
+    },
+  ];
+
   experience(): Observable<any> {
     return this.experienceData;
+  }
+
+  getProjects(): Observable<any> {
+    return this.projects;
   }
 }
