@@ -1,0 +1,33 @@
+<div class="section" id="experence">
+  <div class="container cc-education">
+    <div class="text-center mb-4 title h4">Work Experience</div>
+    <div class="colorlib-narrow-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="time-line-centered">
+            <article
+              *ngFor="let exp of workexp"
+              class="timeline-entry animated-box"
+              dta-animate-effect="fadeInleft"
+            >
+              <div class="timeline-entry-inner">
+                <div class="timeline-icon color-2">
+                  <i class="icon-pen2"></i>
+                </div>
+                <div class="timeline-label">
+                  <h3>
+                    {{ exp.company }}<span>- &nbsp;{{ exp.timeline }}</span>
+                  </h3>
+                  <h4>{{ exp.role }}</h4>
+                  <ul>
+                    <li *ngFor="let work of exp.work | split">{{ work }}</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

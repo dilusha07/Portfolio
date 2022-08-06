@@ -6,19 +6,25 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './profile/header/header.component';
 import { IntroComponent } from './intro/intro.component';
+import { AboutComponent } from './profile/about/about.component';
+import { SplitPipe } from './profile/split.pipe';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     HeaderComponent,
-    IntroComponent
+    IntroComponent,
+    AboutComponent,
+    SplitPipe,
+    ExperienceComponent,
+    ProjectsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
