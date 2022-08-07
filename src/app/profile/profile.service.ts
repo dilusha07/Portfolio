@@ -64,11 +64,48 @@ export class ProfileService {
     },
   ];
 
+  skillsData: any = [
+    {
+      id: '1',
+      skill: 'React',
+      progress: '80%',
+    },
+    {
+      id: '1',
+      skill: 'Node.js',
+      progress: '75%',
+    },
+    {
+      id: '1',
+      skill: 'Angular',
+      progress: '60%',
+    },
+    {
+      id: '1',
+      skill: 'JavaScript JQuery',
+      progress: '80%',
+    },
+    {
+      id: '1',
+      skill: 'SQL, MYSQL, MONGODB, ProstgreSQL',
+      progress: '70%',
+    },
+    {
+      id: '1',
+      skill: 'Phython, Java',
+      progress: '60%',
+    },
+  ];
+
   experience(): Observable<any> {
     return this.experienceData;
   }
 
   getProjects(): Observable<any> {
     return this.projects;
+  }
+
+  skills(): Observable<any> {
+    return this.skillsData;
   }
 }

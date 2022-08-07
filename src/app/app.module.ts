@@ -11,6 +11,7 @@ import { SplitPipe } from './profile/split.pipe';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { SkillsComponent } from './profile/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SplitPipe,
     ExperienceComponent,
     ProjectsComponent,
+    SkillsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
