@@ -97,6 +97,33 @@ export class ProfileService {
     },
   ];
 
+  educationData: any = [
+    {
+      id: '1',
+      from_to_year: '2019 - 2023',
+      education: "Bachelor's Degree",
+      stream: 'Bachelor of Software Engineering',
+      info: 'Specialized Domains: Data Science and Engineering, Net-centric Applications,Business Engineering',
+      institution: 'University of kelaniya',
+    },
+    {
+      id: '2',
+      from_to_year: '2013 - 2015',
+      education: 'Advanced Level',
+      stream: 'Advanced level Examination - 2017',
+      info: 'The High School was mainly focus on the bases of science, mathematics, and Chemistry. There was also a good base on physics, mathematics and chemistry.Completed my Advanced Level examination  with 2A and 1B passes',
+      institution: 'MR/Mahingha Rajapaksha college, Matara',
+    },
+    {
+      id: '3',
+      from_to_year: '2002 - 2012',
+      education: 'Ordinary Level',
+      stream: 'Ordinary Level Examination - 2012',
+      info: 'The Secondary aims at Maths , English , Science, Sinhala, Litrature and Languages.Completed my Secondary school with 8A and 1B passes.',
+      institution: 'MR/Godapitiya Central college',
+    },
+  ];
+
   experience(): Observable<any> {
     return this.experienceData;
   }
@@ -107,5 +134,9 @@ export class ProfileService {
 
   skills(): Observable<any> {
     return this.skillsData;
+  }
+
+  education(): Observable<any> {
+    return this.educationData;
   }
 }
