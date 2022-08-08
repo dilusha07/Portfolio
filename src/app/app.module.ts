@@ -12,6 +12,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { SkillsComponent } from './profile/skills/skills.component';
+import { EducationComponent } from './profile/education/education.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SkillsComponent } from './profile/skills/skills.component';
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
+    EducationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
