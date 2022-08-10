@@ -14,6 +14,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
 import { ReferenceComponent } from './profile/reference/reference.component';
+import { ContactComponent } from './profile/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ReferenceComponent } from './profile/reference/reference.component';
     SkillsComponent,
     EducationComponent,
     ReferenceComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
