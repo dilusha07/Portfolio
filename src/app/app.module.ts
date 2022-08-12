@@ -15,6 +15,7 @@ import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
 import { ReferenceComponent } from './profile/reference/reference.component';
 import { ContactComponent } from './profile/contact/contact.component';
+import { FooterComponent } from './profile/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactComponent } from './profile/contact/contact.component';
     EducationComponent,
     ReferenceComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
