@@ -7,13 +7,15 @@ import { Observable } from 'rxjs';
 export class ProfileService {
   constructor() {}
 
+  about1 =
+    'Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do.';
+
   about2 = `Software Developer with 1 year of experience .
   Worked with Software Development Life Cycle(SDLC) and  agile methodologies .
   Expertise in Angular All versions, React, Javascript,  Node JS and UI with Responsive Designs .
   Have good understanding of Python, Bootstrap, MongoDB, aws, and MYSQL`;
 
-  about1 =
-    'Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do.';
+  resumeUrl = '';
 
   experienceData: any = [
     {
@@ -32,7 +34,7 @@ export class ProfileService {
       desc: '',
       livedemo: '',
       giturl: '',
-      imgUrl: 'assets/images/project1.png',
+      imgUrl: 'assets/images/project1.jpg',
       technologies: 'React, Node.js, MongoDB',
     },
     {

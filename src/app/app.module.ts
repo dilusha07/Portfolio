@@ -1,39 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { HeaderComponent } from './profile/header/header.component';
-import { IntroComponent } from './intro/intro.component';
-import { AboutComponent } from './profile/about/about.component';
-import { SplitPipe } from './profile/split.pipe';
-import { ExperienceComponent } from './experience/experience.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { SkillsComponent } from './profile/skills/skills.component';
-import { EducationComponent } from './profile/education/education.component';
-import { ReferenceComponent } from './profile/reference/reference.component';
-import { ContactComponent } from './profile/contact/contact.component';
-import { FooterComponent } from './profile/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Routes, RouterModule } from '@angular/router';
+import { ProfileModule } from './profile/profile.module';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ProfileComponent,
+  },
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProfileComponent,
-    HeaderComponent,
-    IntroComponent,
-    AboutComponent,
-    SplitPipe,
-    ExperienceComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    EducationComponent,
-    ReferenceComponent,
-    ContactComponent,
-    FooterComponent,
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    ProfileModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
   ],
-  imports: [BrowserModule, AppRoutingModule, NgxPaginationModule],
   providers: [],
   bootstrap: [AppComponent],
 })
