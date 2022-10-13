@@ -8,7 +8,7 @@ export class ProfileService {
   constructor() {}
 
   about1 =
-    'Lover of innovation and everything related to generate new knowledge.Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do.';
+    'Lover of innovation and everything related to generate new knowledge. Face problems with a smile and solve them as soon as possible. Very calculated about the time I spend and work I do.';
 
   about2 = `Software Developer with 1 year of experience .
   Worked with Software Development Life Cycle(SDLC) and  agile methodologies .
@@ -23,7 +23,10 @@ export class ProfileService {
       timeline: 'SEP 2021 - MARCH 2022',
       company: 'Well Tech Solutions',
       role: 'Trainee Software Engineer',
-      work: `Working on StageClip Project as a full stack developer.Responsible for handling the UI in React and Managing the api calls in Node.'`,
+      work: `Carried out diverse development tasks including frontend and backend development by ensuring highest quality of the code .
+      Working on StageClip Project as a full stack developer .
+      Responsible for handling the UI in React and Managing the api calls in Node .
+      Technologies: React.js, TypeScript, Node.js, PostgreSQL `,
     },
   ];
 
@@ -33,7 +36,7 @@ export class ProfileService {
       title: 'Online Food Ordering System',
       desc: '',
       livedemo: '',
-      giturl: '',
+      giturl: 'https://github.com/dilusha07/Online-Food-Order-System.git',
       imgUrl: 'assets/images/project1.jpg',
       technologies: 'React, Node.js, MongoDB',
     },
@@ -42,7 +45,7 @@ export class ProfileService {
       title: 'Library Management System',
       desc: '',
       livedemo: '',
-      giturl: '',
+      giturl: 'https://github.com/dilusha07/lms-frontend.git',
       imgUrl: 'assets/images/project2.jpg',
       technologies: 'React, Node.js, MongoDB',
     },
@@ -50,8 +53,8 @@ export class ProfileService {
       id: 3,
       title: 'Sri Lanka Tourism',
       desc: '',
-      livedemo: '',
-      giturl: '',
+      livedemo: 'https://dilusha07.github.io/Sri-Lanka-Tourism/',
+      giturl: 'https://github.com/dilusha07/Sri-Lanka-Tourism.git',
       imgUrl: 'assets/images/project3.jpg',
       technologies: 'HTML, CSS, JavaScript',
     },
@@ -60,7 +63,7 @@ export class ProfileService {
       title: 'University management System',
       desc: '',
       livedemo: '',
-      giturl: '',
+      giturl: 'https://github.com/dilusha07/University_Management-system.git',
       imgUrl: 'assets/images/project4.jpg',
       technologies: 'Java, MYSQL',
     },
